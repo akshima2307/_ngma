@@ -1617,10 +1617,9 @@ body{
 }
 .collection .art_collection .art_description a{
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.7rem !important;
   margin-top: 1rem;
-  font-weight: 400 !important;
 } 
 .collection .art_collection .art_description.Art1 a {
   color: #E8927C;
