@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGMA</title>
+    <link rel="shortcut icon" type="image/png" href="./image/4-NGMA - 1.png">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/0ccd48ad8b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/cards.css">
+    <link rel="stylesheet" href="./CSS/artCollection.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Art Collection font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"> -->
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar" class="navigation" >
+        <div class="navigation_logo">
+            <img class="navigation_logo-1" src="./image/4-NGMA.png" alt="">
+            <img class="navigation_logo-2" src="./image/2-sanskriti.png" alt="">
+        </div>
+        <div class="nav_links">
+            <ul>
+                <div class="search-box">
+                    <input class="search-input" type="text" name="" placeholder="Search">
+                    <a href="#" class="search-btn">
+                    <i class="fas fa-search" style="font-size: 1.1rem"></i>
+                    </a>     
+                </div>
+                <div class="dropdown">
+                    <span>Tr</span>
+                    <div class="dropdown-content">
+                      <p>A+</p>
+                      <p>A-</p>
+                    </div>
+                </div>
+                <a href=""><i style="font-size: 1.1rem; padding: 0 0.5rem; color: #3d3d3d;" class="fa fa-sitemap" aria-hidden="true"></i></a>
+                <div class="dropdown">
+                    <span><i style="font-size: 1.1rem; padding: 0 0.5rem; color: #3d3d3d;" class="fa fa-share-square-o" aria-hidden="true"></i></span>
+                    <div class="dropdown-content dropdown-content-2">
+                        <p><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></p>
+                        <p><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></p>
+                        <p><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
+                        <p><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>  
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <a href="https://www.indiaculture.nic.in/"><img src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt=""> <span>MINISTRY OF CULTURE</span></a>
+                <a href="http://museumsofindia.gov.in/repository/home"><img src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt=""> <span>MUSEUM OF INDIA</span></a>
+                <a href="./Pages/planVisit.html"><button>Plan your visit</button></a>
+            </ul>
+            <ul>
+                <a href="./Pages/events.html" id="nav_link" class="nav_link">Events</a>
+                <a href="./Pages/exhibition.html" id="nav_link" class="nav_link">Exhibitions</a>
+                <a href="./Pages/collection.html" id="nav_link" class="nav_link">Collection</a>
+                <a href="./Pages/shop.html" id="nav_link" class="nav_link">Shop</a>
+                <a href="./Pages/aboutUs.html" id="nav_link" class="nav_link">About us</a>
+                <a href="./Pages/contactUs.html" id="nav_link" class="nav_link">Contact us</a>
+            </ul>
+        </div>
+    </div>
+    <section class="logo">
+        <a href="https://www.indiaculture.nic.in/"><img class="logo_img logo_img-1" src="./image/MOC Final LOGO (1).png" alt=""></a>
+        <a href="#"><img class="logo_img logo_img-2" src="./image/4-NGMA - 1.png" alt=""></a>
+    </section>
+    <!-- Art Collection Section -->
+    <section id="collection" class="collection">     
+        <a href="#news" class="skip_to_content">Skip to the main content</a>
+        <input class='art5' id='Art5' name='art' type='radio'>
+        <label class='Art5 menu' for='Art5'>
+          <div class='preview'></div>
+          <div class='info'>
+            <h2>
+              <div class='pip'></div>
+              5
+            </h2>
+          </div>
+        </label>
+        <input checked='checked' class='art4' id='Art4' name='art' type='radio'>
+        <label class='menu Art4' for='Art4'>
+          <div class='preview'></div>
+          <div class='info'>
+            <h2>
+              <div class='pip'></div>
+              4
+            </h2>
+          </div>
+        </label>
+        <input checked='checked' class='art3' id='Art3' name='art' type='radio'>
+        <label class='menu Art3' for='Art3'>
+          <div class='preview'></div>
+          <div class='info'>
+            <h2>
+              <div class='pip'></div>
+              3
+            </h2>
+          </div>
+        </label>
+        <input checked='checked' class='art2' id='Art2' name='art' type='radio'>
+        <label class='menu Art2' for='Art2'>
+          <div class='preview'></div>
+          <div class='info'>
+            <h2>
+              <div class='pip'></div>
+              2
+            </h2>
+          </div>
+        </label>
+        <input checked='checked' class='art1' id='Art1' name='art' type='radio'>
+        <label class='menu Art1' for='Art1'>
+          <div class='preview'></div>
+          <div class='info'>
+            <h2>
+              <div class='pip'></div>
+              1
+            </h2>
+          </div>
+        </label>
+        <div class='col'>
+          <div class='art_collection'>
+            <div class='art Art1'>
+                <picture>
+                    <source srcset="https://lh5.ggpht.com/kVi8TCSjBLpLxjU9_wJH4czaGDHvc1US-OM1pxs6ta3TY0Fm4sLUjkpdzCBzhA=w186-c-h268-fcrop64=1,00000dc9fffff783-rw-v1" media="(max-width: 600px)">
+                    <img src="./image/explore_2.jpg" alt="">
+                </picture>
+              <div class='art_description Art1'>
+                <h1>National Gallery of<br>Modern Art</h1>
+                <p>Explore 17000+ most significant works of modern and contemporary art in the country. </p>
+                <label for='readArt1'>
+                  <a href="./Pages/collection.html">
+                    See our collection
+                  </a>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class='art_collection'>
+            <div class='art Art2'>
+                <picture>
+                    <source srcset="https://lh4.ggpht.com/bOBl1_EAkFSkiR3cyjNUSL5Hfl_YH06Nc76JU13Wzg6SojLlU5F0gg7NJik=w208-c-h297-fcrop64=1,14710000eb8dffff-rw-v1" media="(max-width: 600px)">
+                    <img src="./image/art-2.JPG" alt="">
+                </picture>
+                <div class="help-tip"></div> 
+              <div class='art_description Art2'>
+                    <h1>History</h1>
+                    <p>The idea of a national art gallery to germinate and bear fruit was first mooted in 1949. It was nurtured carefully by Prime Minister Jawahar Lal Nehru and Maulana Azad, sensitive bureaucrats like Humayun Kabir and an active art community</p>
+                    <label for='readArt2'>
+                        <a href="./Pages/aboutUs.html">
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+              </div>
+            </div>
+          </div>
+          <div class='art_collection'>
+            <div class='art Art3'>
+                <picture>
+                    <source srcset="https://lh6.ggpht.com/KOz1BTr8d_WlH6qFsdcPwwwyREGHPSqrNXgYpTSpnuhWfLM_Ho0qWWbfFUsgYg=w216-c-h292-fcrop64=1,44320000bbccffff-rw-v1" media="(max-width: 600px)">
+                    <img src="./image/explore_3.jpg" alt="">
+                </picture>
+                <div class="help-tip"></div> 
+              <div class='art_description Art3'>
+                <h1>Remarkable collection</h1>
+                <p>Its sprawling complex houses masterpieces by Raja Ravi Varma, Rabindranath Tagore, Amrita Sher-Gil, as well as modernist masters such as MF Husain, SH Raza and many more. The new wing often hosts travelling or temporary exhibitions by prominent contemporary artists or major retrospectives.</p>
+                <label for='readArt3'>
+                  <a>
+                    Plan your visit
+                  </a>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class='art_collection'>
+            <div class='art Art4'>
+                <picture>
+                    <source srcset="https://lh5.ggpht.com/yyZj2LHL6ypC9D0QgE2nE3X-DVuMaRbmRsutxJAqS6R5QC5vEzL4JMhbjYM=w260-c-h260-fcrop64=1,00001d08ffffd4f7-rw-v1" media="(max-width: 600px)">
+                    <img src="./image/explore_4.jpg" alt="">
+                </picture>
+                <div class="help-tip"></div> 
+              <div class='art_description Art4'>
+                <h1>Educational & Cultural Activities</h1>
+                <p> NGMA  has so much to offer kids and their families. Look, learn, and create together during fun, interactive programs for kids of all ages and their parents.</p>
+                <label for='readArt4'>
+                  <a href="./Pages/education.html">
+                    Find out more
+                  </a>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class='art_collection'>
+            <div class='art Art5'>
+                <picture>
+                    <source srcset="https://lh6.ggpht.com/Y80DIk6KiBnClfSwMSdYFGuX7t4FWliMnN-NBzM4ax-uM-3STY4mIUzTyOwFyQ=w216-c-h292-fcrop64=1,000000befffffdc4-rw-v1" media="(max-width: 600px)">
+                    <img src="./image/art-5.png" alt="">
+                </picture>
+                <div class="help-tip"></div> 
+              <div class='art_description Art5'>
+                <h1> Bride's Toilet by Amrita Sher-Gil, 1937</h1>
+                <p>Part of the South Indian trilogy, Bride's Toilet along with paintings done in this period was inspired by the classical tradition of the Ajanta murals.</p>
+                <label for='readArt5'>
+                  <a>
+                    Read Mor
+                    <span>e</span>
+                  </a>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scrolldown_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+          </div>
+      </section>
+    
+    <!-- <section id="header" class="header">
+        <div class="header_div">
+            <img src="./image/header_background.jpg" alt="">
+        </div>  
+        
+        <div class="headerContent">
+            <div class="headerContentLeft">
+                <h1><span class="span_1">Space</span> to <span class="span_2">Express</span></h1>
+                <button>Sign In</button>
+            </div>
+            <div class="headerContentRight">
+                <div class="imageContainer imageContainer_1">
+                    <img src="./image/slider_edit.png" alt="">
+                </div>
+                <div class="imageContainer imageContainer_2">
+                    <img src="./image/slider_1.png" alt="">
+                </div>
+                <div class="imageContainer imageContainer_3">
+                    <img src="./image/slider_2.png" alt="">
+                </div>
+            
+            </div>
+        </div>
+    </section> -->
+    <!-- Latest News Section -->
+    <section id="news" class="news_container">
+        <div class="news_row">
+            <div class="news_col_1">
+                <h1>Latest <br/> News</h1>
+            </div>
+            <div class=" news_col_2 carousel" data-flickity='{ "groupCells": true }'>
+                    <div class="news_col_content carousel-cell">
+                        <small>News</small>
+                        <span>31 May 2021</span>
+                        <p>
+                            NGMA pays tribute to Ramkinkar Baiz - the earliest modernist in India art
+                        </p>
+                    </div>
+                    <div class="news_col_content carousel-cell">
+                        <small>News</small>
+                        <span>15 May 2021</span>
+                        <p>
+                            Due to prevailing COVID situation Gallery will remain closed for public viewing till 30th May 2021 or until further order.                        </p>
+                    </div>
+                    <div class="news_col_content carousel-cell">
+                        <small>News</small>
+                        <span>18 May 2021</span>
+                        <p>
+                            Launching of NGMA Audio Guide App 
+                        </p>
+                    </div>
+                    <div class="news_col_content carousel-cell">
+                        <small>Online Event</small>
+                        <span>12 May 2021</span>
+                        <p>
+                            Naimisha Summer Art Program registration opens till 15th May 2021
+                        </p>
+                    </div>
+                    <div class="news_col_content carousel-cell">
+                        <small>News</small>
+                        <span>29 March 2021</span>
+                        <p>
+                        NGMA celebrates 67th Foundation Day(29 March 2021)
+                        </p>
+                    </div>
+                    <div class="news_col_content carousel-cell">
+                        <small>Online Event</small>
+                        <span>25 April 2021</span>
+                        <p>
+                        Virtual Tour: An Unfinised Journey | Amrita Sher-Gill
+                        </p>
+                    </div>
+                    <div class="news_col_content carousel-cell">
+                        <small>Event</small>
+                        <span>25 April 2021</span>
+                        <p>
+                        NGMA starts weekend art, music sessions - The Hindu
+                        </p>
+                    </div>
+                    <div class="news_col_content carousel-cell">
+                        <small>Exhibition</small>
+                        <span>25 April 2021</span>
+                        <p>
+                            कलाकारों के लिए नई उम्मीदें लेकर आया 2021, एनजीएमए की खास पहल
+                        </p>
+                    </div>
+                    <div class="news_col_content carousel-cell">
+                        <small>News</small>
+                        <span>25 April 2021</span>
+                        <p>
+                        Museums trying to win back patrons with special events and free weekend tours  
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about_content">
+            <h1>Welcome to NGMA</h1>
+            <span>NATIONAL GALLERY OF MODERN ART</span>
+            <p>The National Gallery of Modern Art, New Delhi, is a repository of more than 17000 
+                most significant works of modern and contemporary art in the country. The principal 
+                aims of NGMA are to acquire and preserve modern art from 1850 onwards and to present 
+                it to a global audience which will create an understanding and sensitivity towards a 
+                time that helped shape the contemporary art in India. The institution is also committed 
+                to promote contemporary Indian art in its various forms....
+            </p>
+            <a href="./Pages/aboutUs.html">About Us</a>
+        </div>
+        <div class="about_event">
+            <div class="about_event-heading">
+                <div>
+                    <h1>EVENTS</h1>
+                </div>
+                <div>
+                    <a href="./Pages/events.html">View All</a>
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="about_event-cards">
+                <div class="about_event-card">
+                    <div>
+                        <h1>17</h1>
+                        <h3>MAY</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 11:00 AM TO 12:00 PM</span>
+                        <p>Naimisha Summer Art Program.</p>
+                    </div>
+                </div>
+                <div class="about_event-card">
+                    <div>
+                        <h1>8</h1>
+                        <h3>MAR</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 12:30 PM TO 5:30 PM</span>
+                        <p>The Soul Speaker | Curator of Lives
+                        </p>
+                    </div>
+                </div>
+                <div class="about_event-card">
+                    <div>
+                        <h1>8</h1>
+                        <h3>MAR</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 00:00 PM TO 00:00 PM</span>
+                        <p>NAIMISHA
+                        </p>
+                    </div>
+                </div>
+                <div class="about_event-card">
+                    <div>
+                        <h1>D</h1>
+                        <h3>M</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 00:00 PM TO 00:00 PM</span>
+                        <p>Art Adda
+                        </p>
+                    </div>
+                </div>
+                <div class="about_event-card">
+                    <div>
+                        <h1>D</h1>
+                        <h3>M</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 00:00 PM TO 00:00 PM</span>
+                        <p>Night at Museum
+                        </p>
+                    </div>
+                </div>
+                <div class="about_event-card">
+                    <div>
+                        <h1>D</h1>
+                        <h3>M</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 00:00 PM TO 00:00 PM</span>
+                        <p>Workshop</p>
+                    </div>
+                </div><div class="about_event-card">
+                    <div>
+                        <h1>D</h1>
+                        <h3>M</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 00:00 PM TO 00:00 PM</span>
+                        <p>Talk</p>
+                    </div>
+                </div><div class="about_event-card">
+                    <div>
+                        <h1>D</h1>
+                        <h3>M</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 00:00 PM TO 00:00 PM</span>
+                        <p>Weekends at NGMA / Performance</p>
+                    </div>
+                </div>
+                <div class="about_event-card">
+                    <div>
+                        <h1>D</h1>
+                        <h3>M</h3>
+                    </div>
+                    <div>
+                        <span>TIME: 00:00 PM TO 00:00 PM</span>
+                        <p>Special events</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- DG Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-img">
+                <div class="col-img__bg">
+                    &nbsp;
+                </div>
+                <img onmouseover="imgChange(this)" onmouseout="imgChange2(this)" src="./image/dg_1.jpg" alt="Director,NGMA">
+            </div>
+            <div class="col-content">
+                <h1>
+                    <span>Director General's Message</span>
+                </h1>
+                <h2>Adwaita Gadanayak</h2>
+                <h3>Director - General, NGMA</h2>
+                <p class="story__text ">
+                    <span class="span_1">&ldquo;</span>
+                    I am delighted to share that it is indeed a proud moment for me to take charge as the first Director General of the National Gallery of Modern Art (NGMA), India's premier national institution devoted to modern and contemporary visual art practices.
+                    This role comes with a major sense of responsibility towards this pioneering institution,<!-- the artist community in India and abroad and towards the citizens of this deeply-rooted and diverse country.The iconic work of modern masters that the NGMA in New Delhi, along with its two branches in Mumbai and Bengaluru, houses and exhibits inspire us to celebrate each day and we want to spread this joy of pure passion, insight and hard work with each one visiting the NGMA .... -->
+                    <span class="span_2">&rdquo;</span>
+                </p>
+                <a href="./Pages/dg.html" class="btn">Read more....</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibition Section -->
+    <section class="exhibition" id="exhibition">
+        <div class="exhibition_heading">
+            <div>
+                <h1>Exhibitions</h1>
+                <p>Explore upcoming & ongoing exhibitions.</p>
+            </div>
+            <div>
+                <a href="./Pages/exhibition.html">View all Exhibition</a>
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="exhibition_card_container">
+            <div class="exhibition_cards carousel"  data-flickity='{ "groupCells": true }'>
+                <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                    <img src="./image/e&e_13.jpeg" alt="">  
+                    <div class="card_content">
+                        <a href="#">In Transmission हस्तांतरण</a>
+                        <span>NGMA Delhi</span>
+                    </div>
+                    <button><a href="#popup-1">KNOW MORE</a></button>
+                    <small>Coming Soon</small>
+                </div>
+                <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                    <img src="./image/e&e_4.jpeg" alt="">  
+                    <div class="card_content">
+                        <a href="http://ngmaindia.gov.in/virtual-tour-of-nicholas-roerich.asp">The Life & Work of Nicholas Roerich (1878 - 1947)</a>
+                        <span>Virtual</span>
+                    </div>
+                    <button><a href="#popup-3">KNOW MORE</a></button>
+                    <small>Ongoing</small>
+                </div>
+                <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                    <img src="./image/e&e_5.jpeg" alt="">
+                    <div class="card_content">
+                      <a href="http://ngmaindia.gov.in/virtual-tour-of-ramkinkar-baij.asp">Ramkinkar Baij (1906-1980) Journey through silent transformation and expression</a>
+                      <span>Virtual</span>
+                    </div>
+                    <button><a href="#popup">KNOW MORE</a></button>
+                </div>
+                <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                    <img src="./image/e&e_12.png" alt="">
+                    <div class="card_content">
+                      <a href="http://ngmaindia.gov.in/virtual-tour-of-modern-art-1.asp">Jamini Roy (1887 - 1972)</a>
+                      <span>Virtual</span>
+                    </div>
+                    <button><a href="#popup-2">KNOW MORE</a></button>
+                </div>
+                <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                    <img src="./image/e&e_7.jpeg" alt="">
+                    <div class="card_content">
+                      <a href="http://ngmaindia.gov.in/virtual-tour-of-abanindranath-tagore.asp">The great maestro Abanindranath Tagore (1871 - 1951)</a>
+                      <span>Virtual</span>
+                    </div>
+                    <button><a href="#popup">KNOW MORE</a></button>
+                </div>
+                <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                    <img src="./image/e&e_8.jpeg" alt="">
+                    <div class="card_content">
+                      <a href="http://ngmaindia.gov.in/virtual-tour-of-gaganendranath-tagore.asp">Reminiscences: Gaganendranath Tagore (1867 - 1938)</a>
+                      <span>Virtual</span>
+                    </div>
+                    <button><a href="#popup">KNOW MORE</a></button>
+                </div>
+                <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                    <img src="./image/e&e_1.jpeg" alt="">
+                    <div class="card_content">
+                      <a href="http://ngmaindia.gov.in/virtual-tour-of-abanindranath-tagore.asp">Gurudev Journey of the maestro through his vistual vocabulary</a>
+                      <span>Virtual</span>
+                    </div>
+                    <button><a href="#popup">KNOW MORE</a></button>
+                </div>
+                <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                    <img src="./image/e&e_10.png" alt="">
+                    <div class="card_content">
+                      <a href="http://ngmaindia.gov.in/virtual-tour-of-amrita-sher-gil.asp">An Unfinished Journey | Amrita Sher-Gil</a>
+                      <span>Virtual</span>
+                    </div>
+                    <button><a href="#popup-4">KNOW MORE</a></button>
+                </div>
+            </div>     
+    </section>
+
+    <section class="timeline">
+        <h2>PARIKRAMAN</h2>
+        <p>A Journey into the time</p>
+        
+        <ul class="timeline_nav">
+            <a href="http://ngmaindia.gov.in/virtual-tour-of-raja-ravi-varma.asp" id="tab-1" class="timeline-tab-item">
+                <small>raja ravi varma</small>
+                <span>1848 - 1906</span> 
+                <img src="./image/timeline-10.jpeg" alt="">
+                <strong>&nbsp;</strong>
+            </a>
+            <a href="http://ngmaindia.gov.in/virtual-tour-of-rabindranath-tagore.asp" id="tab-2" class="timeline-tab-item">
+                <small>rabindranath tagore </small>
+               <span>1861 - 1941</span>
+               <img src="./image/timeline-6.jpeg" alt="">
+               <strong>&nbsp;</strong>
+            </a>
+            <a href="http://ngmaindia.gov.in/virtual-tour-of-gaganendranath-tagore.asp" id="tab-3" class="timeline-tab-item">
+                <small>Gaganendranath Tagore</small>
+                <span>1867 - 1938</span>
+                <img src="./image/timeline-8.jpeg" alt="">
+                <strong>&nbsp;</strong>
+            </a>
+             <a href="http://ngmaindia.gov.in/virtual-tour-of-abanindranath-tagore.asp" id="tab-4" class="timeline-tab-item">
+                <small>Abanindranath Tagore</small>
+                <span>1871 - 1951</span>
+                <img src="./image/timeline-7.jpeg" alt="">
+                <strong>&nbsp;</strong>
+             </a>
+             <a href="http://ngmaindia.gov.in/virtual-tour-of-nicholas-roerich.asp" id="tab-5" class="timeline-tab-item">
+                <small>Nicholas Roerich</small>
+                <span>1874-1947</span>
+                <img src="./image/timeline-9.jpeg" alt="">
+                <strong>&nbsp;</strong>
+             </a>
+             <a href="http://ngmaindia.gov.in/virtual-tour-of-nandalal-bose.asp" id="tab-6" class="timeline-tab-item">
+                <small>Nandalal Bose</small>
+                <span>1882-1966</span>
+                <img src="./image/timeline-5.jpeg" alt="">
+                <strong>&nbsp;</strong>
+             </a>
+             <a href="http://ngmaindia.gov.in/virtual-tour-of-modern-art-1.asp" id="tab-7" class="timeline-tab-item">
+                <small>Jamini Roy</small>
+                <span>1887-1972</span>
+                <img src="./image/timeline-3.jpeg" alt="">
+                <strong>&nbsp;</strong>
+             </a>
+             <a href="http://ngmaindia.gov.in/virtual-tour-of-ramkinkar-baij.asp" id="tab-8" class="timeline-tab-item">
+                <small>Ramkinkar Baij</small>
+                <span>1906-1980</span>
+                <img src="./image/timeline-4.jpeg" alt="">
+                <strong>&nbsp;</strong>
+             </a>
+             <a href="http://ngmaindia.gov.in/virtual-tour-of-life-and-works-of-sailoz-mookherjea.asp" id="tab-9" class="timeline-tab-item">
+                <small>Sailoz Mookherjea</small>
+                <span>1907-1960</span>
+                <img src="./image/timeline-1.jpeg" alt="">
+                <strong>&nbsp;</strong>
+             </a>
+             <a href="http://ngmaindia.gov.in/virtual-tour-of-amrita-sher-gil.asp" id="tab-10" class="timeline-tab-item">
+                <small>Amrita Sher Gil</small>
+                <span>1913-1941</span>
+                <img src="./image/timeline-2.jpeg" alt="">
+                <strong>&nbsp;</strong>
+             </a>
+        </ul>
+    </section>
+
+
+    <!-- Explore online section -->
+    <section class="virtual_tour" id="virtual_tour">
+        <div class="virtual_tour-header">
+            <h1>Museum from home</h1>
+        </div>
+        <div class="grid">
+            <figure class="effect-julia draw meet">
+                <img src="./image/formBackground.jpeg" alt="img21"/>
+                <figcaption>
+                    <h2>Virtual <span>Tour</span></h2>
+                    <div>
+                    </div>
+                    <a href="./Pages/virtualTour.html">View more</a>
+                </figcaption>			
+            </figure>
+            <figure class="effect-julia draw meet">
+                <img src="./image/header_1.png" alt="img22"/>
+                <figcaption>
+                    <h2>Virtual <span>Gallery</span></h2>
+                    <div>
+                    </div>
+                    <a href="./Pages/virtualGallery.html">View more</a>
+                </figcaption>			
+            </figure>
+            <figure class="effect-julia draw meet">
+                <img src="./image/virtual_gallery-5.png" alt="img22"/>
+                <figcaption>
+                    <h2>Art for <span>Nation</span></h2>
+                    <div>
+                        
+                    </div>
+                    <a href="#popup-art_for_nation">View more</a>
+                </figcaption>		
+            </figure>
+            <figure class="effect-julia draw meet">
+                <img src="./image/shop_11.JPG" alt="img22"/>
+                <figcaption>
+                    <h2>Online<span>Shop</span></h2>
+                    <div>
+                        
+                    </div>
+                    <a href="./Pages/shop.html">View more</a>
+                </figcaption>			
+            </figure>
+        </div>
+    </section>
+
+    
+
+    <!-- Soham -->
+    <section class="sohImgContainer">
+        <img src="./image/sohamImg.jpeg" alt="">
+        <a href="https://so-ham.in/"> <button>Know More</button> </a>
+    </section>
+
+    <!-- Video Section -->
+    <section class="vd_container">
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_1">
+                <video class="vd"  muted loop>
+                    <source src="./image/video1.mp4" type="video/mp4" />
+                </video>
+                <h3 class="videoContainer_heading">Chethur Mukhi by Aekka Yadagiri Rao medium</h3>
+                <small class="videoContainer_small">Stone</small>
+            </div>
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_2">
+                <video class="vd"  muted loop>
+                    <source src="./image/video2.mp4" type="video/mp4" />
+                </video>
+                <h3 class="videoContainer_heading">Growing creeper, 1992 by Pradeep Kumar Saxena Medium</h3>
+                <small class="videoContainer_small">Marble</small>
+            </div>  
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_3">
+                <video class="vd"  muted loop>
+                    <source src="./image/video3.mp4" type="video/mp4" />
+                </video>
+                <h3 class="videoContainer_heading">Afection, 1998 b M. Dhar Mani Medium</h3>
+                <small class="videoContainer_small">Black Marble</small>
+            </div>    
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_4">
+                <video class="vd"  muted loop>
+                    <source src="./image/video5.mp4" type="video/mp4" />
+                </video>
+                <h3 class="videoContainer_heading">Premitive Image by Promod K. Mann Medium</h3>
+                <small class="videoContainer_small">Black Marble</small>
+            </div> 
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_5">
+                <video class="vd"  muted loop>
+                    <source src="./image/video9.mp4" type="video/mp4" />
+                </video>
+                <h3 class="videoContainer_heading">Manushi-5th, 1994 by S.M. Shahid Jawed Medium</h3>
+                <small class="videoContainer_small">Bronze</small>
+            </div> 
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_6">
+                <video class="vd"  muted loop>
+                    <source src="./image/video7.mp4" type="video/mp4" />
+                </video>
+                <h3 class="videoContainer_heading">Pink Marble by Mukul Parwar Medium</h3>
+                <small class="videoContainer_small">Marble</small>
+            </div> 
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_7">
+                <video class="vd"  muted loop>
+                    <source src="./image/video8.mp4" type="video/mp4" />
+                </video>
+                <h3 class="videoContainer_heading">Yogi, 1997 by Hari Prasad Medium</h3>
+                <small class="videoContainer_small">Stone</small>
+            </div> 
+        </section>
+
+        <!-- Explore collection section -->
+        <section class="explore">
+            <h1>Explore more</h1>
+            <div class="explore_cards carousel"  data-flickity='{ "groupCells": true , "wrapAround": true}'>
+                <a href="./Pages/artRef.html" class="explore_card carousel-cell">
+                    <img src="./image/4.png" alt="">
+                    <h2>Library</h2>
+                </a>
+                <a href="./Pages/education.html" class="explore_card carousel-cell">
+                    <img src="./image/6.png" alt="">
+                    <h2>Education</h2>
+                </a>
+                <a href="./Pages/restoration.html" class="explore_card carousel-cell">
+                    <img src="./image/5.png">
+                    <h2>Restoration</h2>
+                </a>
+                <a href="./Pages/collection.html" class="explore_card carousel-cell">
+                    <img src="./image/2.png" alt="">
+                    <h2>Collection</h2>
+                </a>
+                <a href="#" class="explore_card carousel-cell">
+                    <img src="./image/3.png" alt="">
+                    <h2>NGMA Mobile App</h2>
+                    <small>Coming Soon</small>
+                </a>
+                <a href="./Pages/photogallery.html" class="explore_card carousel-cell">
+                    <img src="./image/photo_gallery-9.jpg" alt="">
+                    <h2>Photo Gallery</h2>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- vacancies section -->
+        <section class="vacancies">
+            <div class="vacancies_col-1">
+                <h2 class="vacancies_heading"> Vacancies | Fellowships</h2>
+                <p> <span><i class="fa fa-calendar-alt"></i> Date</span></p>
+                <a href="http://ngmaindia.gov.in/pdf/Engagement-of-Consultants-in-NGMA-New-Delhi-2021.pdf">Engagement of Consultants in NGMA, New Delhi 2021</a>
+                <p>Last Date: 14th April 2021</p>
+                <p>e-Mail ID: accounts-ngma@gov.in </p>
+            </div>
+            <div class="vacancies_col-2">
+                <h2 class="vacancies_heading">E-Tenders</h2>
+                <a href="http://ngmaindia.gov.in/NIT-for-Class-A-printers-of-dop-1-march-2021.pdf"><i class="fa fa-external-link" aria-hidden="true"></i>
+                    Notice | Inviting Tender
+                </a>
+                <a href="http://ngmaindia.gov.in/pdf/Tendernotice-23-2-2021.pdf"><i class="fa fa-external-link" aria-hidden="true"></i> 
+                    Tender Notice
+                    Conceptualisation, Design, Supply, Installation, Testing and Commissioning of 3D Projection Mapping Multimedia Show including related Civil, Mechanical, Structural, Electrical work and integration with existing Façade Lighting and 3 years of comprehensive maintenance and operation of equipment and show
+                </a>
+            </div>
+            <div class="vacancies_col-3">
+                <h2 class="vacancies_heading">Quick Links</h2>
+                <div class="vacancies_links">
+                    <a href="https://www.indiaculture.nic.in"><i class="fa fa-chevron-right" aria-hidden="true"></i>  Ministry of Culture</a>
+                    <a href="https://so-ham.in"><i class="fa fa-chevron-right" aria-hidden="true"></i>  So-ham - Join first cultural media platform</a>
+                    <a href="http://www.museumsofindia.gov.in/repository/collection/ObjectType?museum=ngma_del"><i class="fa fa-chevron-right" aria-hidden="true"></i>  Museum of India</a>
+                    <a href="https://bharatparv2021.com/apps/vf/tourism/v1/exhibitor-details/91/3"><i class="fa fa-chevron-right" aria-hidden="true"></i>  Bharat Parv</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Link section -->
+        <section class="links">
+            <ul>
+                <li><a href="./Pages/publication.html">Publications</a></li>
+                <li><a href="#">Tenders</a></li>
+                <li><a href="#">Vacancies</a></li>
+              </ul>
+            <ul>
+                <li><a href="#">Health and Safety Guidelines</a></li>
+                <li><a href="#">Internship Programme</a></li>
+                <li><a href="#">Request for Photography</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://forms.gle/KGyBo5QXuBPwKGN8A">Feedback</a></li>
+                <li><a style="display: inline-block;">NGMA Audio Guide App &nbsp;<a style="display: inline-block;" href="https://cutt.ly/ngmaiOS"> iOS</a> | <a style="display: inline-block;" href="https://cutt.ly/ngmaAndroid">Android</a>  | <a style="display: inline-block;" href="https://cutt.ly/ngma-pwa">Web App</a></a></li>
+                <li><a href="https://www.youtube.com/channel/UCrz1pygtJ-t1F2ZzPG4CFKA">Live Streaming </a></li>
+            </ul>
+        </section>
+    
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="footer_col footer_col-1">
+                <span class="heading">Opening Hours</span>
+                <div class="days">
+                    <span class="day">Sunday</span>
+                    <span class="time">11am - 6pm</span>
+                </div>
+                <div class="days">
+                    <span class="day">Monday</span>
+                    <span class="time">Closed</span>
+                </div>
+                <div class="days">
+                    <span class="day">Tuesday</span>
+                    <span class="time">11am - 6pm</span>
+                </div>
+                <div class="days">
+                    <span class="day">Wednesday</span>
+                    <span class="time">11am - 6pm</span>
+                </div>
+                <div class="days">
+                    <span class="day">Thursday</span>
+                    <span class="time">11am - 6pm</span>
+                </div>
+                <div class="days">
+                    <span class="day">Friday</span>
+                    <span class="time">11am - 6pm</span>
+                </div>
+                <div class="days">
+                    <span class="day">Satuday</span>
+                    <span class="time">11am - 6pm</span>
+                </div>
+                <small>Please book your tickets online before visiting</small>
+                <div class="info">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span>Friday closing hours vary</span>
+                </div>
+                <button> <a style="text-decoration: none; color: white;" href="./Pages/planVisit.html">See the detailed calender <i class="fa fa-chevron-right" aria-hidden="true"></i></a></button>
+                <div class="logos">
+                    <img src="./image/4-NGMA - 1.png" alt="">
+                    <img src="./image/5-soham.png" alt="">
+                    <img src="./image/MOC Final LOGO (1).png" alt="">
+                </div>
+            </div>
+
+            <div class="footer_col footer_col-2 carousel" data-flickity='{ "autoPlay": true }'>
+                <div class="footer_col-2-div carousel-cell">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span>National Gallery of Modern Art</span>
+                    <a href="https://twitter.com/ngma_delhi">@ngma_delhi</a>
+                    <p><span>11 hours, 09 minutes ago</span>
+                        Online Summer Art Fiesta | NAIMISHA 2021 | Chirantan - Multidisciplinary Workshop | Group-2
+                        <small>link</small>
+                    </p>
+                    <div class="circles">
+                        <div class="circle active-circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="footer_col-2-div carousel-cell">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>National Gallery of Modern Art</span>
+                    <a href="https://www.facebook.com/ngmadelhi/">@ngmadelhi</a>
+                    <p><span>5 hours, 09 minutes ago</span>
+                        National Gallery of Modern Art pays tribute to Ramkinkar Baiz - one of the earliest modernist in Indian art.
+                        <small>link</small>
+                    </p>
+                    <div class="circles">
+                        <div class="circle"></div>
+                        <div class="circle active-circle"></div>
+                        <div class="circle"></div>
+                    </div> 
+                </div>
+                <div class="footer_col-2-div carousel-cell">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>National Gallery of Modern Art</span>
+                    <a href="https://www.instagram.com/ngma.delhi/?utm_source=ig_embed&ig_mid=C08E5525-BAD8-4111-9ECB-83243B509AEB&hl=en">ngma.delhi</a>
+                    <p><span>2 hours, 19 minutes ago</span>
+                        National Gallery of Modern Art pays tribute to Ramkinkar Baiz - one of the earliest modernist in Indian art.
+                        <small>link</small>
+                    </p>
+                    <div class="circles">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle active-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_col footer_col-3">
+                <div class="footer_col-3-links">
+                    <a href="./Pages/events.html">Events<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a href="./Pages/exhibition.html">Exhibitions<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a href="./Pages/collection.html">Collection <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a href="./Pages/aboutUs.html">About Us  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a href="./Pages/contactUs.html">Contact Us  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="footer_col-3-icons">
+                    <a href="https://twitter.com/ngma_delhi"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/channel/UCrz1pygtJ-t1F2ZzPG4CFKA"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/ngma.delhi/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/ngmadelhi/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                    <span style="display: block;margin: 0.5rem 0;">Number of visitors</span>
+                    <img src="http://www.easycounter.com/counter.php?ngma" alt="">
+                </div>
+                <div class="footer_col-3-info">
+                    <span>Download our application</span>
+                    <img src="data:image/png;base64,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" alt="">
+                </div>
+            </div>
+        </footer>
+        <div class="popup" id="popup-1">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./image/e&e_13.jpeg" alt="" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#exhibition" class="popup__close">&times;</a>
+                    <h2>Exhibition Overview</h2>
+
+                    <p class="popup__text">
+                        Exhibition Coming Soon
+                    </p>
+                    <a href="#" class="popup_btn">View More</a>
+                </div>
+    
+            </div>
+        </div>
+        <div class="popup" id="popup-2">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./image/e&e_12.png" alt="" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#exhibition" class="popup__close">&times;</a>
+                    <h2>Exhibition Overview</h2>
+
+                    <p class="popup__text">From the end 1920s, Jamini Roy rejected the European oil medium and began to use the traditional pigments from vegetable and mineral sources. The imagery was often drawn from village life. Jamini Roy invested in the portrayal of peasants, artisans, followers of religious cults, village women and adivasis with immense dignity. He represented in his paintings what they held sacred with references from folk tales and narratives that permeated the rural consciousness. In this particular painting, one of his most iconic, the three women depicted as they worship, have been painted with thick, black contour lines with the application of the blue colour of the drape done flatly.
+                        The rustic figures and village society feature prominently in the paintings of Jamini Roy. It helped him to communicate with ordinary people because he was entering their familiar world of imagination.
+                    </p>
+                    <a href="http://ngmaindia.gov.in/virtual-tour-of-modern-art-1.asp" class="popup_btn">View More</a>
+                </div>
+    
+            </div>
+        </div>
+        <div class="popup" id="popup-3">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./image/e&e_4.jpeg" alt="" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#exhibition" class="popup__close">&times;</a>
+                    <h2>Exhibition Overview</h2>
+
+                    <p class="popup__text">    
+                        Nicholas Roerich was born in St. Petersburg, Russia, on October 9, 1874, the first-born son of lawyer and notary, Konstantin Roerich and his wife Maria. He was raised in the comfortable environment of an upper middle-class Russian family with its advantages of contact with the writers, artists, and scientists who often came to visit the Roerichs. At an early age he showed a curiosity and talent for a variety of activities.
+                    </p>
+                    <a href="http://ngmaindia.gov.in/virtual-tour-of-nicholas-roerich.asp" class="popup_btn">View More</a>
+                </div>
+    
+            </div>
+        </div>
+        <div class="popup" id="popup-4">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./image/e&e_10.png" alt="" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#exhibition" class="popup__close">&times;</a>
+                    <h2>Exhibition Overview</h2>
+
+                    <p class="popup__text">    
+                        'Europe belongs to Picasso, Matisse and Braque and many others. India belongs only to me.'Proud declaration by Amrita Sher-Gil in 1938, with characteristic boldness, way she wanted to see her as the first truly modern Indian painter.A scion of Indian Sikh aristocracy, Umrao Singh was a nationalist, independent scholar with philosophical interests, and an eccentric, somewhat Tolstoyan figure in appearance. Celebrated artist Amrita Sher-Gil was the elder daughter of Umrao Singh and his Hungarian wife Marie Antoinette. Born in Hungary, Hungarian was her first language, was brought up on Magyar Folk tales. Bela Bertok had been the previous occupant of one of the apartments in the building the Sher-Gil family lived in.Amrita's formal training in art began in 1929, when she was admitted to "Ecole Nationale des Beau Arts" (after a brief stint at the Grande Chaumiere) in Paris. Became proficient in French and the ways of bohemian Paris. </p>
+                    <a href="http://ngmaindia.gov.in/virtual-tour-of-amrita-sher-gil.asp" class="popup_btn">View More</a>
+                </div>
+    
+            </div>
+        </div>
+        <div class="popup" id="popup-art_for_nation">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./image/art_of_nation.jpg" alt="" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#virtual_tour" class="popup__close">&times;</a>
+                    <h2>Art For Nation</h2>
+                    <ul>
+                        <li><span>Title </span>	&nbsp;Marriage of Pabuji Rathor</li>
+                        <li><span>Accession Number </span>  &nbsp;ngma-01377</li>
+                        <li><span>Museum Name  </span>  &nbsp;National Gallery of Modern Art, New Delhi</li>
+                        <li><span>Gallery Name </span> &nbsp; NGMA-New Delhi</li>
+                        <li><span>Object Type </span>  &nbsp;Painting</li>
+                        <li><span>Medium </span>  &nbsp;Tempera on paper</li>
+                        <li><span>Main Artist </span> &nbsp;Shekhawat, Kripal Singh</li>
+                        <li><span>Artist's Nationality </span>  &nbsp;Indian</li>
+                        <li><span>Origin Place </span>  &nbsp;India</li>
+                        <li><span>Dimensions </span>  &nbsp;37 x 59 inches</li>
+                    </ul>
+                    <div id="share">
+
+                        <!-- facebook -->
+                        <a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&title={{title}}" target="blank"><i class="fa fa-facebook"></i></a>
+                      
+                        <!-- twitter -->
+                        <a class="twitter" href="https://twitter.com/intent/tweet?status={{title}}+{{url}}" target="blank"><i class="fa fa-twitter"></i></a>
+                      
+                        <!-- pinterest -->
+                        <a class="pinterest" href="https://pinterest.com/pin/create/bookmarklet/?media={{media}}&url={{url}}&is_video=false&description={{title}}" target="blank"><i class="fa fa-pinterest-p"></i></a>
+                        
+                      </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="popup" id="popup_virtual_tour">
+            <div class="popup__content">
+                <span class="virtual_tour-heading">3 museum views</span>
+                <a href="#navbar" class="popup__close">&times;</a>
+                <div class="virtual_tour-div">
+                    <a href="https://artsandculture.google.com/streetview/exteriors-of-the-national-gallery-of-modern-art-new-delhi/HQHkYXndnOcAoA?sv_lng=77.23460143771246&sv_lat=28.6103905520765&sv_h=2">
+                        <img src="https://maps.googleapis.com/maps/api/streetview?size=400x300&pano=o5lNPSl9hPfJ0XHUwqVG4g&heading=-130.0&pitch=15.0&sensor=false&client=google-cultural&signature=Fxej8Kj3mlIF16Bp5d8zaBZVeEQ" alt="">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <small>Explore</small>
+                        <span>Exteriors of the National Gallery of Modern Art, New Delhi</span>
+                    </a>
+                    <a href="https://artsandculture.google.com/streetview/national-gallery-of-modern-art-new-delhi/sAGjNY-6kIOa6g?sv_lng=77.2344348&sv_lat=28.6093319&sv_h=18&sv_p=0&sv_pid=F_nfC1hoOqCd06L7cB5ufA&sv_z=0.9999999999999997">
+                        <img src="https://maps.googleapis.com/maps/api/streetview?size=400x300&pano=F_nfC1hoOqCd06L7cB5ufA&heading=38.0&sensor=false&client=google-cultural&signature=a8FShGpKcqPq1BCV7C4c_mT4kqQ" alt="">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <small>Explore</small>
+                        <span>National Gallery of Modern Art, New Delhi</span>
+                    </a>
+                    <a href="https://artsandculture.google.com/streetview/jaipur-house-national-gallery-of-modern-art-new-delhi/KgGaM68i4izQmw?sv_lng=77.2345015991288&sv_lat=28.60999555159427&sv_h=42.27&sv_p=-13.299999999999997&sv_pid=n6i8-QRh-CVZIUObhNvCMg&sv_z=0.9999999999999997">
+                        <img src="https://maps.googleapis.com/maps/api/streetview?size=400x300&pano=n6i8-QRh-CVZIUObhNvCMg&heading=62.27&pitch=-13.3&sensor=false&client=google-cultural&signature=tz7EktUSkhwRB2h-FAvvZx3SaRc" alt="">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <small>Explore</small>
+                        <span>Jaipur House - National Gallery of Modern Art, New Delhi</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+
+        <!-- Card Slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

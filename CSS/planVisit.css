@@ -1,0 +1,434 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.info{
+    margin-top: 7rem;
+    position: relative;
+    overflow-x: hidden;
+}
+.info-img{
+    position: relative;
+    display: flex;
+    width: 300vw;
+    height: 27rem;
+    transition: all 0.2s;
+}
+.info-img::after{
+    content: "";
+    background-color: rgba(0,0,6,0.2);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.info-img > div > img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    box-shadow:  inset 0 0 10px rgba(0,0,0,0.4);
+}
+
+
+.hover-1{
+    transform: translateX(-100vw);
+}
+.hover-2{
+    transform: translateX(-200vw);
+}
+.hover{
+    transform: translateX(0);
+}
+
+.info-content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.info-content > h1{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.info-content > p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+.info-content > a {
+    color: white;
+    text-decoration: none;
+}
+.info-content > a > button{
+    padding: 1rem 4rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background: #304991;
+    margin: 2rem 0;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0 ,0 ,0 , 0.4);
+}
+.info-content_btns > a{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    width: 20rem;
+    height: 5rem;
+    background: white;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 5px solid #2d4386;
+}
+.info-content_btns > a:not(:last-child){
+    margin-right: 2rem;
+}
+.info-content_btns > a > p{
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+.info-content_btns > a > small{
+    font-size: 0.9rem;
+    color: #3d3d3d;
+}
+
+.info_small{
+    padding: 3rem;
+}
+.info_small-header{
+    margin-bottom: 2rem;
+}
+.info_small-header > h1{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+.info_small-header > p{
+    font-size: 0.9rem;
+}
+.info_small-card{
+    width: 100%;
+    height: 33rem;
+    text-align: center;
+}
+.info_small-card > img{  
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.info_small-card > button{
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background: #304991;
+    margin: 1rem 0;
+    color: white;
+}
+.info_small-card > span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3d3d3d;
+    margin: 2rem 0 1rem 0;
+    display: block;
+}
+.info_small-card > p{
+    font-size: 1rem;
+    color: #2d4386;
+}
+
+@media(max-width: 1200px){
+    .info-content_btns > a{
+        width: 18rem;
+        padding: 0.8rem;
+    }
+}
+@media(max-width: 1090px){
+    .info-content_btns > a{
+        width: 16rem;
+    }
+    .info-content_btns > a:not(:last-child){
+        margin-right: 1rem;
+    }
+}
+@media(max-width: 950px){
+    .info-content_btns > a{
+        width: 13rem;
+    }
+    .info-content_btns > a > p{
+        font-size: 1rem;
+    }
+    .info-content_btns > a > small{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 800px){
+    .info{display: block;}
+    .info_small{display: none;}
+}
+@media(max-width: 800px){
+    .info_small{display: block;}
+    .info{display: none;}
+}
+
+.planvisit_header{
+    position: relative;
+    background-image:linear-gradient(to right bottom , rgba(45, 67, 134,0.4), rgba(64, 96, 191,0.4), rgba(40, 180, 133,0.4)), url("../image/Background.jpeg");
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.planvisit_header > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.planvisit_header-content{
+    position: absolute;
+    bottom: 10%;
+    left: 3rem;
+    color: white;
+    z-index: 1;
+}
+.planvisit_header-content > h1{
+    font-size: 2.5rem;
+}
+
+.planvisit_container{
+    margin: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.planvisit_container li{list-style: none;}
+.planvisit_content-left{width: 55%;}
+.planvisit_content-right{width: 35%;}
+
+.planvisit_content-left > h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+    color: #304991;
+}
+
+.planvisit_content-left > ul > li{
+    width: 90%;
+    font-size: 1.2rem;
+    margin-bottom: 0.9rem;
+    letter-spacing: 0.1px;
+    line-height: 27px;
+    display: flex;
+    align-items: flex-start;
+}
+.planvisit_content-left > span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 0.7rem;
+}
+.planvisit_content-left > p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.planvisit_content-left > ul > li > img{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.planvisit_content-right > span{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.planvisit_content-right > ul > li{
+    color: #3d3d3d;
+    border-bottom: 2px solid #999;
+    padding: 1rem 0;
+    margin-bottom: 0.7rem;
+}
+
+.planvisit_location{
+    margin: 3rem 5rem;
+}
+.planvisit_location > h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.planvisit_location > p{
+    font-size: 1.1rem;
+}
+.planvisit_location > a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #4466cc;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 3rem;
+    margin: 3rem auto;
+    width: 18rem;
+}
+.planvist_location-container{
+    margin: 2.5rem 0;
+    margin-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.planvisit_location-div{
+    padding: 0.6rem;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 10px;
+    transition: all 0.2s
+}
+.planvisit_location-div > img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+.planvisit_location-div > span{
+    display: block;
+    font-size: 1.5rem;
+}
+.planvisit_location-div:hover{
+    background-color: #304991;
+    color: white;
+} 
+.planvisit_help{margin: 3rem 5rem;}
+.planvisit_help > span{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.planvisit_help > p{
+    margin-top: 0.3rem;
+    font-size: 1.1rem;
+}
+.planvisit_help-container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.planvisit_help-div{
+    width: 30%;
+    display: flex;
+}
+.planvisit_help-div > i{
+    font-size: 1.8rem;
+}
+.planvisit_help-div > div{
+    margin-left: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+.planvisit_help-div > div > span{
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+.planvisit_help-div > div > small{
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all .3s; }
+    .popup:target {
+      opacity: 1;
+      visibility: visible; }
+    .popup__close:link, .popup__close:visited {
+      color: #000;
+      position: absolute;
+      top: 2rem;
+      right: 4rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block; }
+    .popup__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75%;
+      background-color: white;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      display: table;
+      overflow: hidden; }
+      .popup__content > .virtual_tour-heading {
+        font-size: 2rem;
+        display: block;
+        margin-top: 3rem;
+        margin-left: 3rem; }
+      .popup__content > .virtual_tour-div {
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; }
+        .popup__content > .virtual_tour-div > a {
+          text-decoration: none;
+          text-align: center; }
+          .popup__content > .virtual_tour-div > a:not(:last-child) {
+            margin-right: 1rem; }
+          .popup__content > .virtual_tour-div > a > img {
+            width: 12rem;
+            height: 12rem;
+            object-fit: cover;
+            border-radius: 50%; }
+          .popup__content > .virtual_tour-div > a > i {
+            color: #304991;
+            position: relative;
+            text-align: center;
+            margin: auto;
+            margin-top: -2rem;
+            z-index: 100;
+            width: max-content;
+            padding: 0.6rem 1.2rem;
+            font-size: 2rem;
+            border-radius: 50%;
+            display: block;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+          .popup__content > .virtual_tour-div > a > span {
+            margin-top: 1rem;
+            display: block;
+            color: #3d3d3d;
+            font-size: 1.3rem; }
+          .popup__content > .virtual_tour-div > a > small {
+            margin-top: 0.5rem;
+            display: block;
+            color: #304991;
+            font-size: 1rem; }

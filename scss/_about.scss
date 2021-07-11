@@ -1,0 +1,129 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about_content{
+    padding: 3rem;
+    width: 50%;
+    text-align: center;
+}
+.about_content > h1{
+    font-size: 2rem;
+    background-color: $Primary-color;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+.about_content > span{
+    color: rgba(152,152,152,1.00);
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+.about_content > p{
+    text-align: left;
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    text-align: justify;
+    letter-spacing: 0.3px;
+    margin: 0 3rem;
+}
+.about_content > a{
+    display: block;
+    text-align: right;
+    color: $Primary-color;
+    text-decoration: none;
+}
+.about_event{
+    width: 45%;
+    padding: 3rem;
+    background-color: #f7f7f7;
+}
+.about_event-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.about_event-heading > div > a{
+    text-decoration: none;
+    color: black;
+}
+.about_event-cards{
+    margin-top: 2rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.about_event-card{
+    display: flex;
+    align-items: center;
+}
+.about_event-card:not(:last-child){
+    margin-bottom: 2rem;
+}
+.about_event-card > div:nth-child(1){
+    background-color: $Primary-color;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.about_event-card > div:nth-child(2){
+    padding: 1rem;
+}
+.about_event-card > div > span{
+    color: rgba(152,152,152,1.00);
+    display: block;
+    margin-bottom: 0.4rem;
+}
+.about_event-card > div > p{
+    width: 75%;
+    color: #3d3d3d;
+}
+
+
+@media(max-width: 1000px){
+    .about_content > p{
+        margin: 0 1rem;
+    }
+    .about_event {
+        padding: 2rem 1rem;
+    }
+    .about_event-card > div > p{width: 100%;}
+    .about_content{padding: 2rem;}
+}
+@media(max-width: 850px){
+    .about_event-card > div:nth-child(1) {padding: 1rem;}
+    .about_event-card > div:nth-child(2) {padding: 0.5rem;}
+    .about_content > h1 {font-size: 1.5rem;}
+    .about_content > span {font-size: 1rem;}
+    .about_content > p{margin: 0;}
+    .about_content {
+        padding: 2rem 0 2rem 1rem;
+    }
+}
+@media(max-width: 600px){
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_content {
+        padding: 2rem 0 2rem 0;
+    }
+    .about_content{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .about_event{width: 80%;}
+}
+@media(max-width: 450px){
+    .about_content{
+        width: 100%;
+    }
+    .about_content > p{
+        width: 90%;
+        margin: auto;
+    }
+    .about_event{width: 100%;}
+}

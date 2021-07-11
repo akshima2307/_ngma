@@ -1,0 +1,152 @@
+.exhibition{
+    margin: 5rem 0 3.5rem 0;
+}
+.exhibition_heading{
+    margin:  0 3rem 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.exhibition_heading > div > h1{
+    font-size: calc(1.375rem + (32 - 22) * ((100vw - 375px) / (1440 - 375)));
+    line-height: 1.1;
+    margin-bottom: 0.7rem;
+    color: $Primary-color;
+}
+.exhibition_heading > div > p{
+    line-height: 1.333;
+    color: #3d3d3d;
+}
+.exhibition_heading > div > a{
+    text-decoration: none;
+    color: black;
+    margin-right: 0.4rem;
+    font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
+    line-height: 1.2;
+}
+.exhibition_cards > button{
+    background: white;
+    border-radius: 0;
+}
+.exhibition_cards > button:first-of-type{
+    left: 0;
+}
+.exhibition_cards > button:last-of-type{
+    right: 0;
+}
+.exhibition_cards .flickity-page-dots{
+    display: none !important;
+}
+.exhibition_cards .flickity-slider{
+    margin-left: -3rem;
+}
+.card{
+    width: 20%;
+    height: max-content;
+    margin-right: 2rem;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.card > small{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    background: $Primary-color;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+.card a{
+    text-decoration: none;
+    color: white;
+}
+.card  button{
+    font-family: inherit;
+    font-size: 1rem;
+    display: none;
+    background-color: $Primary-color;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    outline: none;
+    transition: all 0.2s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+// .card:not(:last-child){margin-right: 2rem;}
+.card > img{
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+    transition: all 0.2s;
+}
+.card_content{
+    padding: 2rem 0;
+    width: 90%;
+}
+.card_content > a{
+    font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+}
+.card_content > span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.7555;
+    display: block;
+    color: $Primary-color;
+}
+@media(max-width: 1140px){
+    .card{
+        width: 25%;
+        margin-right: 2rem;
+    }
+}
+@media(max-width: 900px){
+    .exhibition_heading{margin: 2rem;}
+    .card{
+        width: 30%;
+        margin-right: 1rem;
+    }
+}
+@media(max-width: 700px){
+    .card{
+        width: 46%;
+    }   
+    .exhibition_heading > div > p {
+        width: 70%;
+    }
+    .exhibition_heading > div > a{
+        font-size: 1rem;
+    }
+
+}
+@media(max-width: 500px){
+    .card{
+        width: 80%;
+    }
+    .exhibition_heading{
+        margin: 2rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .exhibition_heading > div:nth-child(1){
+        margin-bottom: 1rem;
+    }
+    .exhibition_heading > div:nth-child(2){
+        width: 100%;
+        text-align: right;
+    }
+    .exhibition_heading > div > p {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+}
+  

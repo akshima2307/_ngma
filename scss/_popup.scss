@@ -1,0 +1,193 @@
+.popup{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(#000, $alpha: 0.8);
+    transition: all .3s;
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+    &__close{
+        &:link,
+        &:visited{
+            color: #000;
+            position: absolute;
+            top: 2rem;
+            right: 4rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+       
+    }
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 75%;
+        background-color: white;
+        box-shadow: 0 2rem 4rem rgba(#000 ,.2);
+        border-radius: 3px;
+        display: table;
+        overflow: hidden;
+        & > .virtual_tour-heading{
+            font-size: 2rem;
+            display: block;
+            margin-top: 3rem;
+            margin-left: 3rem;
+        }
+        & > .virtual_tour-div{
+            padding: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            & > a{
+                text-decoration: none;
+                text-align: center;
+                &:not(:last-child){
+                    margin-right: 1rem;
+                }
+                & > img{
+                    width: 12rem;
+                    height: 12rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                & > i{
+                    color: $Primary-color;
+                    position: relative;
+                    text-align: center;
+                    margin: auto;
+                    margin-top: -2rem;
+                    z-index: 100;
+                    width: max-content;
+                    padding: 0.6rem 1.2rem;
+                    font-size: 2rem;
+                    border-radius: 50%;
+                    display: block;
+                    background: white;
+                    box-shadow: 0 10px 20px rgba(0, 0, 0,0.1 );
+                }
+                & > span{
+                    margin-top: 1rem;
+                    display: block;
+                    color: #3d3d3d;
+                    font-size: 1.3rem;
+                }
+                & > small{
+                    margin-top: 0.5rem;
+                    display: block;
+                    color: $Primary-color;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    &__left{
+        width: 40%;
+        display: table-cell;
+    }
+    &__right{
+        width: 60%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+        & > h2{
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        & > ul{
+            margin: 2rem 0;
+            & > li{
+                list-style: none;
+                font-size: 1.1rem;
+                margin-bottom: 0.7rem;
+                color: #3d3d3d;
+                & > span{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: #000;
+                }
+            }
+        }
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+    }
+    &__text{
+      font-size: 1rem;
+      margin-bottom: 4rem;
+      letter-spacing: 0.2px;
+      line-height: 23px;
+    }
+    & .popup_btn{
+        color: white;
+        text-decoration: none;
+        background: $Primary-color;
+        padding: 1rem 2.5rem;
+
+    }
+}
+#share {
+  	margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* buttons */
+
+#share a {
+	width: 50px;
+  	height: 50px;
+  	display: inline-block;
+  	margin: 8px;
+  	border-radius: 50%;
+  	font-size: 24px;
+  	color: #fff;
+	opacity: 0.75;
+	transition: opacity 0.15s linear;
+}
+
+#share a:hover {
+	opacity: 1;
+}
+/* icons */
+
+#share i {
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+/* colors */
+
+.facebook {
+ 	background: #3b5998;
+}
+
+.twitter {
+  	background: #55acee;
+}
+
+.googleplus {
+  	background: #dd4b39;
+}
+
+.linkedin {
+  	background: #0077b5;
+}
+
+.pinterest {
+  	background: #cb2027;
+}
