@@ -19,7 +19,8 @@ body {
   top: 90%;
   left: 95%;
   transform: translate(-95%, -90%);
-  padding: 1rem 4rem;
+  width: 15rem;
+  padding: 1rem;
   font-size: 1.2rem;
   border: none;
   outline: none;
