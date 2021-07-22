@@ -89,12 +89,12 @@ const moveleft = function (count){
 const showBtn = function(ele){
   const btn = ele.childNodes[5];
   btn.style.display = "block";
-  ele.childNodes[1].style.transform = 'scale(1.1)';
+  // ele.childNodes[1].style.transform = 'scale(1.1)';
 }
 const hideBtn = function(ele){
   const btn = ele.childNodes[5];
   btn.style.display = "none";
-  ele.childNodes[1].style.transform = 'scale(1)';
+  // ele.childNodes[1].style.transform = 'scale(1)';
 }
 
 // Navbar position fixed
@@ -115,5 +115,16 @@ window.onscroll = function(){
 
 //Timeline
 const tabItems = document.querySelectorAll('.timeline-tab-item');
-const tabContentItems = document.querySelectorAll('.timeline-tab-content-item');
+const tabSpan = document.querySelectorAll('.timeline-tab-item-span');
+const tabSmall = document.querySelectorAll('.timeline-tab-item-small');
+
+tabItems.forEach(item => item.addEventListener('mouseover', function(){
+  tabSpan.forEach(span => span.style.display = "block");
+  tabSmall.forEach(span => span.style.display = "block");
+}));
+tabItems.forEach(item => item.addEventListener('mouseout', function(){
+  tabSpan.forEach(span => span.style.display = "none");
+  tabSmall.forEach(span => span.style.display = "none");
+}))
+
 

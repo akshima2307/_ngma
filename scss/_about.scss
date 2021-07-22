@@ -24,15 +24,15 @@
 .about_content > p{
     text-align: left;
     color: #3d3d3d;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: justify;
-    letter-spacing: 0.3px;
     margin: 0 3rem;
 }
 .about_content > a{
+    font-size: 1.2rem;
+    color:  $Primary-color;
     display: block;
     text-align: right;
-    color: $Primary-color;
     text-decoration: none;
 }
 .about_event{
@@ -78,6 +78,7 @@
     margin-bottom: 0.4rem;
 }
 .about_event-card > div > p{
+    font-size: 1.2rem;
     width: 75%;
     color: #3d3d3d;
 }

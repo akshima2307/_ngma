@@ -1,5 +1,5 @@
 .exhibition{
-    margin: 5rem 0 3.5rem 0;
+    margin: 5rem 0 0 0;
 }
 .exhibition_heading{
     margin:  0 3rem 3rem 3rem;
@@ -14,6 +14,7 @@
     color: $Primary-color;
 }
 .exhibition_heading > div > p{
+    font-size: 1.2rem;
     line-height: 1.333;
     color: #3d3d3d;
 }
@@ -114,6 +115,9 @@
         width: 30%;
         margin-right: 1rem;
     }
+    .exhibition_cards .flickity-slider{
+        margin-left: 0rem;
+    }
 }
 @media(max-width: 700px){
     .card{
@@ -147,6 +151,8 @@
         width: 100%;
         font-size: 0.8rem;
     }
-
+    .exhibition_cards .flickity-slider{
+        margin-left: -1rem;
+    }
 }
   

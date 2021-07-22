@@ -83,14 +83,28 @@
 }
 
 @media(max-width: 500px){
+    .vd_container {
+        padding: 1rem 0;
+        padding-bottom: 2rem;
+    }
     .videoContainer_7{
         display: none;
     }
     .videoContainer_6{
         display: none;
     }
+    .videoContainer_5{
+        display: none;
+    }
+    .videoContainer_4{
+        display: none;
+    }
+    .videoContainer_3{margin-right: 0 !important;}
     .videoContainer{
         height: 30rem;
+        width: 30%;
     }
-
+    .lg-width{width: 45%;}
+    .videoContainer_heading{font-size: 1rem;}
+    .videoContainer_small{font-size: 0.8rem;}
 }
