@@ -19,17 +19,17 @@ body{
   top: 4%;
   z-index: 1000;
   width: 4.5rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 .logo_img-1{
   left: 2%;
     width: 10rem;
     object-fit: contain;
-    background-color: white;
     border-radius: 5px;
+    filter: invert(1);
 }
 .logo_img-2{
   right: 2%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 .skip_to_content{
   text-decoration: none;

@@ -17,11 +17,16 @@
             <div class="navigation_logo">
                 <a href="../index.html">
                     <picture>
-                        <source srcset="../image/4-NGMA-1.png" media="(max-width: 750px)">
+                        <source srcset="../image/4-NGMA-1.png" media="(max-width: 850px)">
                         <img class="navigation_logo-1" src="../image/4-NGMA.png" alt="">
                     </picture>
                 </a>
                 <img class="navigation_logo-2" src="../image/2-sanskriti.png" alt="">
+                <div class="menu__item--hamburger" tabindex="1">
+                    <div class="line">&nbsp;</div>
+                    <div class="line">&nbsp;</div>
+                    <div class="line">&nbsp;</div>
+                </div>
             </div>
             <div class="nav_links">
                 <ul>
@@ -50,8 +55,8 @@
                     </div>
                 </ul>
                 <ul>
-                    <a href="https://www.indiaculture.nic.in/"><img src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt=""> <span>MINISTRY OF CULTURE</span></a>
-                    <a href="http://museumsofindia.gov.in/repository/home"><img src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt=""> <span>MUSEUM OF INDIA</span></a>
+                    <a href="https://www.indiaculture.nic.in/"><img src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt=""> <span>MINISTRY OF<br/>CULTURE</span></a>
+                    <a href="http://museumsofindia.gov.in/repository/home"><img src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt=""> <span>MUSEUM OF <br/>INDIA</span></a>
                     <a href="./planVisit.html"><button>Plan your visit</button></a>
                 </ul>
                 <ul>
@@ -269,7 +274,26 @@
                     </div>
                 </div>
             </div>
-    
+        <script>
+            // Navigation bar menu icon
+
+            const menuIcon = document.querySelector('.menu__item--hamburger');
+            const navLinks = document.querySelector('.nav_links');
+            let clicked = false;
+            if(window.innerWidth > 750){navLinks.style.display = "flex";}
+            if(window.innerWidth < 750){
+                menuIcon.addEventListener('click', function(){
+                    if(!clicked){
+                        navLinks.style.display = "block";
+                        clicked = true;
+                    }
+                    else{
+                        clicked = false;
+                        navLinks.style.display = "none";
+                    }
+                });
+            }
+        </script>
             <!-- Card Slider -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

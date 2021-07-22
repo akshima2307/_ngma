@@ -131,7 +131,53 @@ body{
     background-color: white;
     font-size: 1.2rem;
 }
-
+@media(max-width: 1050px){
+    .artRef_dh-content > div > img{width: 35vw;}
+    .artRef_dh-content > div:last-child{margin-left: 2rem;}
+}
+@media(max-width: 900px){
+    .artRef_dh-content > div > p{font-size: 1rem;}
+    .artRef_dh-content > div > ul > li{font-size: 1rem;}
+    .artRef_m-content > p{font-size: 1rem;}
+}
+@media(max-width: 750px){
+    .artRef{margin-top: 8rem;}
+    .artRef_dh-content{
+        align-items: center;
+        flex-direction: column;
+    }
+    .artRef_dh-content > div:first-child{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .artRef_dh-content > div > img {
+        width: 42vw;
+    }
+    .artRef_dh-content > div:last-child{
+        margin-top: 2rem;
+        margin-left: 0;
+        width: 90%;
+    }
+    .artRef_b-content > small{width: 50%;}
+    .artRef > h1{font-size: 2rem;}
+}
+@media(max-width: 600px){
+    .artRef_m-content > p{width: 90%;}
+    .artRef_dh-content > div:first-child{
+        flex-direction: column;
+        align-items: center;
+    }
+    .artRef_dh-content > div > img {
+        width: 92vw;
+    }
+    .artRef_b-content > small{width: 100%;}
+    .artRef > h1{
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        width: 90%;
+    }
+}
 
 .popup {
     height: 100vh;
