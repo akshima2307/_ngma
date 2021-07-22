@@ -465,7 +465,8 @@ body {
   grid-row: 1 / 4;
   grid-column: 2 / 3;
   border-radius: 0 0 94px 0;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }
 
 .col-img > img:hover {
   transform: scale(1.02); }

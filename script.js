@@ -1,8 +1,8 @@
 const imgChange = function(ele){
-    ele.setAttribute('src', './image/dg_2.jpg');
+    ele.setAttribute('src', './image/dg_2.jpeg');
 }
 const imgChange2 = function(ele){
-    ele.setAttribute('src', './image/dg_1.jpg');
+    ele.setAttribute('src', './image/dg_1.jpeg');
 }
 
 
