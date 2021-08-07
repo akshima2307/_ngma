@@ -5,8 +5,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 70%;
+  }
+}
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .navigation {
@@ -133,17 +143,12 @@ body {
   margin-bottom: -1px;
   width: 40%;
 }
-.container--tabs .nav-tabs > li > a {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
 .container--tabs .nav-tabs > li > a > img {
   width: 3rem;
 }
 .container--tabs .nav-tabs > li > a {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   color: #555;
@@ -333,15 +338,17 @@ form .label {
   border: 2px solid #304991;
 }
 
-@media(max-width: 1000px){
-  .tab_content > div > table tr > td{
+@media (max-width: 1000px) {
+  .tab_content > div > table tr > td {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
   }
-  .tab_content > div > table tr:first-child > th{font-size: 1rem;}
+  .tab_content > div > table tr:first-child > th {
+    font-size: 1rem;
+  }
 }
-@media(max-width: 800px){
-  .container--tabs .nav-tabs > li > a{font-size: 1rem;}
+@media (max-width: 800px) {
+  /* .container--tabs .nav-tabs > li > a{font-size: 1rem;}
   .contact_info > div > h2{font-size: 1.2rem;}
   .tab_content > div > span{
     font-size: 1rem;
@@ -359,23 +366,42 @@ form .label {
   }
   .form .checkboxes label{font-size: 1rem;}
   .form button{font-size: 1rem;}
-  .contact_info > div > i{font-size: 1.2rem;}
-  .tab_content > div > table tr > td{padding: 0.6rem 0.5rem;}
+  .contact_info > div > i{font-size: 1.2rem;} */
+  .tab_content > div > table tr > td {
+    padding: 0.6rem 0.5rem;
+  }
 }
-@media(max-width: 600px){
-  .container--tabs{margin-top: 8rem;}
-  .contact_heading{
-    font-size: 1.8rem;
+@media (max-width: 500px) {
+  .container--tabs {
+    margin-top: 8rem;
+  }
+  .contact_heading {
+    /* font-size: 1.8rem; */
     margin-bottom: 2rem;
   }
-  .container--tabs .nav-tabs > li > a{
-    font-size: 0.9rem;
+  .container--tabs .nav-tabs > li > a {
+    /* font-size: 0.9rem; */
     padding: 5px 0;
   }
-  .container--tabs .tab-content > .tab-pane.active{
+  .container--tabs .tab-content > .tab-pane.active {
     flex-direction: column;
   }
-  .tab_content{width: 90%;}
-  .tab_form{width: 90%;}
-  .tab_content > div > table{display: none;}
+  .tab_content {
+    width: 90%;
+  }
+  .tab_form {
+    width: 90%;
+  }
+  .tab_content > div > table {
+    display: none;
+  }
+  .tab_content > div > .table_a {
+    display: none !important;
+  }
+  .tab_content > div > .table_s {
+    display: none !important;
+  }
+  .tab_form > h2 {
+    margin: 2rem 0;
+  }
 }

@@ -5,8 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0 2rem;
 }
 .timeline_nav > a {
   text-decoration: none;
@@ -31,7 +29,7 @@
 }
 .timeline_nav > a > small {
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   text-transform: capitalize;
   padding-top: 0.8rem;
   padding-bottom: 0.3rem;
@@ -131,26 +129,9 @@
 .timeline_nav > a:nth-child(10) > strong {
   background: #ff7335;
 }
-@media(max-width: 1425px){
-  .timeline_nav{height: 50rem;}
-  .timeline_nav > a{width: 10rem;}
-}
 
-@media(max-width: 880px){
-  .timeline_nav{height: 70rem;}
-}
-@media(max-width: 720px){
-  .timeline_nav{
-    height: 90rem;
-    margin-bottom: -8rem;
+@media(max-width: 960px){
+  .timeline {
+    display: none;
   }
-}
-@media(max-width: 560px){
-  .timeline_nav{
-    height: 110rem;
-    margin-bottom: -3rem;
-  }
-}
-@media(max-width: 400px){
-  .timeline_nav > a{width: 50%;}
 }

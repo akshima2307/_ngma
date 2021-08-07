@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
     <script src="https://kit.fontawesome.com/0ccd48ad8b.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/aboutUs.css">
@@ -18,8 +20,18 @@
     <!-- Navbar -->
     <div id="navbar" class="navigation">
         <div class="navigation_logo">
-            <a href="../index.html"><img class="navigation_logo-1" src="../image/4-NGMA.png" alt=""></a>
+            <a href="../index.html">
+                <picture>
+                    <source srcset="../image/4-NGMA-1.png" media="(max-width: 850px)">
+                    <img class="navigation_logo-1" src="../image/4-NGMA.png" alt="">
+                </picture>
+            </a>
             <img class="navigation_logo-2" src="../image/2-sanskriti.png" alt="">
+            <div class="menu__item--hamburger" tabindex="1">
+                <div class="line">&nbsp;</div>
+                <div class="line">&nbsp;</div>
+                <div class="line">&nbsp;</div>
+            </div>
         </div>
         <div class="nav_links">
             <ul>
@@ -52,10 +64,10 @@
             <ul>
                 <a href="https://www.indiaculture.nic.in/"><img
                         src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt="">
-                    <span>MINISTRY OF CULTURE</span></a>
+                    <span>MINISTRY OF <br />CULTURE</span></a>
                 <a href="http://museumsofindia.gov.in/repository/home"><img
                         src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt="">
-                    <span>MUSEUM OF INDIA</span></a>
+                    <span>MUSEUM OF<br /> INDIA</span></a>
                 <a href="./planVisit.html"><button>Plan your visit</button></a>
             </ul>
             <ul>
@@ -145,24 +157,6 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="dg_message">
-                                    <div class="dg_img">
-                                        <img src="../image/user.png" alt="">
-                                    </div>
-                                    <div class="dg_mg">
-                                        <p>
-                                            <span>
-                                                Ms. Temsunaro Jamir
-                                            </span>
-                                            <strong class="strong_1">Director</strong>
-                                            <strong class="strong_2">&ldquo;</strong>
-                                            I am delighted to share that it is indeed a proud moment for me to take
-                                            charge as the Director of the National Gallery of Modern Art (NGMA), India's
-                                            premier national institution devoted to modern and contemporary visual art
-                                            practices.
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                             <div class="grid-1">
                                 <div>
@@ -179,67 +173,86 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="dg_message">
+                            <div class="dg_img">
+                                <img src="../image/user.png" alt="">
+                            </div>
+                            <div class="dg_mg">
+                                <p>
+                                    <span>
+                                        Ms. Temsunaro Jamir
+                                    </span>
+                                    <strong class="strong_1">Director</strong>
+                                    <strong class="strong_2">&ldquo;</strong>
+                                    I am delighted to share that it is indeed a proud moment for me to take
+                                    charge as the Director of the National Gallery of Modern Art (NGMA), India's
+                                    premier national institution devoted to modern and contemporary visual art
+                                    practices.
+                                </p>
+                            </div>
+                        </div>
                         <h1>Advisory <span>Committe</span></h1>
-                        <div class="slider carousel" style="transition: all 0.2s ease-out;" data-flickity='{ "autoPlay": true ,"wrapAround": true}'>
+                        <div class="slider carousel" style="transition: all 0.2s ease-out;"
+                            data-flickity='{ "autoPlay": true ,"wrapAround": true}'>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Harsh Vardhan.jpg" alt="">
+                                    <img src="../image/adv/adv-Harsh Vardhan.png" alt="">
                                 </div>
                                 <h3>Shri. Harsh Vardhan Sharma</h3>
                                 <span>Chairman</span>
                             </div>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Arpana.jpg" alt="Img">
+                                    <img src="../image/adv/adv-Arpana.png" alt="Img">
                                 </div>
                                 <h3>Mrs. Arpana Gaur</h3>
                                 <span>Member</span>
                             </div>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Dharmendra.jpg" alt="Img">
+                                    <img src="../image/adv/adv-Dharmendra.png" alt="Img">
                                 </div>
                                 <h3>Shri. Dharmendra Rathore</h3>
                                 <span>Member</span>
                             </div>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Kanchan.jpg" alt="Img">
+                                    <img src="../image/adv/adv-Kanchan.png" alt="Img">
                                 </div>
                                 <h3>Ms. Kanchan Chander</h3>
                                 <span>Member</span>
                             </div>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Pranam.jpg" alt="Img">
+                                    <img src="../image/adv/adv-Pranam.png" alt="Img">
                                 </div>
                                 <h3>Shri S Pranam Singh</h3>
                                 <span>Member</span>
                             </div>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Ravendra.jpg" alt="Img">
+                                    <img src="../image/adv/adv-Ravendra.png" alt="Img">
                                 </div>
                                 <h3>Shri Ravendra Bhardwaj</h3>
                                 <span>Member</span>
                             </div>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Sunil.jpg" alt="Img">
+                                    <img src="../image/adv/adv-Sunil.png" alt="Img">
                                 </div>
                                 <h3>Shri Sunil Kumar Vishwakarma</h3>
                                 <span>Member</span>
                             </div>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Vijayant.jpg" alt="Img">
+                                    <img src="../image/adv/adv-Vijayant.png" alt="Img">
                                 </div>
                                 <h3>Shri Vijayant Dash</h3>
                                 <span>Member</span>
                             </div>
                             <div class="slide carousel-cell">
                                 <div>
-                                    <img src="../image/adv-Viren.jpg" alt="Img">
+                                    <img src="../image/adv/adv-Viren.png" alt="Img">
                                 </div>
                                 <h3>Shri Viren Tanwar</h3>
                                 <span>Memeber</span>
@@ -313,24 +326,6 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="dg_message">
-                                    <div class="dg_img">
-                                        <img src="../image/user.png" alt="">
-                                    </div>
-                                    <div class="dg_mg">
-                                        <p>
-                                            <span>
-                                                Smt. Anita Rupavataram
-                                            </span>
-                                            <strong class="strong_1">Director</strong>
-                                            <strong class="strong_2">&ldquo;</strong>
-                                            I am delighted to share that it is indeed a proud moment for me to take
-                                            charge as the Director of the National Gallery of Modern Art (NGMA), India's
-                                            premier national institution devoted to modern and contemporary visual art
-                                            practices.
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                             <div class="grid-2">
                                 <div>
@@ -344,72 +339,91 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <h1>Advisory <span>Committe</span></h1>
-                            <div id="slider-container" class="slider owl-carousel">
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Harsh Vardhan.jpg" alt="">
-                                    </div>
-                                    <h3>Shri. Harsh Vardhan</h3>
-                                    <span>Chairman</span>
+                        <div class="dg_message">
+                            <div class="dg_img">
+                                <img src="../image/user.png" alt="">
+                            </div>
+                            <div class="dg_mg">
+                                <p>
+                                    <span>
+                                        Smt. Anita Rupavataram
+                                    </span>
+                                    <strong class="strong_1">Director</strong>
+                                    <strong class="strong_2">&ldquo;</strong>
+                                    I am delighted to share that it is indeed a proud moment for me to take
+                                    charge as the Director of the National Gallery of Modern Art (NGMA), India's
+                                    premier national institution devoted to modern and contemporary visual art
+                                    practices.
+                                </p>
+                            </div>
+                        </div>
+                        <h1>Advisory <span>Committe</span></h1>
+                        <div class="slider carousel" style="transition: all 0.2s ease-out;"
+                            data-flickity='{ "autoPlay": true ,"wrapAround": true}'>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Harsh Vardhan.png" alt="">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Arpana.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mrs. Arpana Gaur</h3>
-                                    <span>Member</span>
+                                <h3>Shri. Harsh Vardhan Sharma</h3>
+                                <span>Chairman</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Arpana.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Dharmendra.jpg" alt="Img">
-                                    </div>
-                                    <h3>Shri. Dharmendra Rathore</h3>
-                                    <span>Member</span>
+                                <h3>Mrs. Arpana Gaur</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Dharmendra.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Kanchan.jpg" alt="Img">
-                                    </div>
-                                    <h3>Ms. Kanchan Chander</h3>
-                                    <span>Member</span>
+                                <h3>Shri. Dharmendra Rathore</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Kanchan.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Pranam.jpg" alt="Img">
-                                    </div>
-                                    <h3>Shri S Pranam Singh</h3>
-                                    <span>Member</span>
+                                <h3>Ms. Kanchan Chander</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Pranam.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Ravendra.jpg" alt="Img">
-                                    </div>
-                                    <h3>Shri Ravendra Bhardwaj</h3>
-                                    <span>Member</span>
+                                <h3>Shri S Pranam Singh</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Ravendra.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Sunil.jpg" alt="Img">
-                                    </div>
-                                    <h3>Shri Sunil Kumar Vishwakarma</h3>
-                                    <span>Designation</span>
+                                <h3>Shri Ravendra Bhardwaj</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Sunil.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Vijayant.jpg" alt="Img">
-                                    </div>
-                                    <h3>Shri Vijayant Dash</h3>
-                                    <span>Member</span>
+                                <h3>Shri Sunil Kumar Vishwakarma</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Vijayant.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Viren.jpg" alt="Img">
-                                    </div>
-                                    <h3>Shri Viren Tanwar</h3>
-                                    <span>Memeber</span>
+                                <h3>Shri Vijayant Dash</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Viren.png" alt="Img">
                                 </div>
-                            </div> -->
+                                <h3>Shri Viren Tanwar</h3>
+                                <span>Memeber</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="tab-3" class="tab-pane">
@@ -473,24 +487,6 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="dg_message">
-                                    <div class="dg_img">
-                                        <img src="../image/user.png" alt="">
-                                    </div>
-                                    <div class="dg_mg">
-                                        <p>
-                                            <span>
-                                                Ms. Nazneen Banu
-                                            </span>
-                                            <strong class="strong_1">Director</strong>
-                                            <strong class="strong_2">&ldquo;</strong>
-                                            I am delighted to share that it is indeed a proud moment for me to take
-                                            charge as the Director of the National Gallery of Modern Art (NGMA), India's
-                                            premier national institution devoted to modern and contemporary visual art
-                                            practices.
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                             <div class="grid-2">
                                 <div>
@@ -504,72 +500,91 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <h1>Advisory <span>Committe</span></h1>
-                            <div id="slider-container" class="slider owl-carousel">
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Arpana.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mrs. Arpana</h3>
-                                    <span>Designation</span>
+                        <div class="dg_message">
+                            <div class="dg_img">
+                                <img src="../image/user.png" alt="">
+                            </div>
+                            <div class="dg_mg">
+                                <p>
+                                    <span>
+                                        Ms. Nazneen Banu
+                                    </span>
+                                    <strong class="strong_1">Director</strong>
+                                    <strong class="strong_2">&ldquo;</strong>
+                                    I am delighted to share that it is indeed a proud moment for me to take
+                                    charge as the Director of the National Gallery of Modern Art (NGMA), India's
+                                    premier national institution devoted to modern and contemporary visual art
+                                    practices.
+                                </p>
+                            </div>
+                        </div>
+                        <h1>Advisory <span>Committe</span></h1>
+                        <div class="slider carousel" style="transition: all 0.2s ease-out;"
+                            data-flickity='{ "autoPlay": true ,"wrapAround": true}'>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Harsh Vardhan.png" alt="">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Dharmendra.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mr. Dharmendra</h3>
-                                    <span>Designation</span>
+                                <h3>Shri. Harsh Vardhan Sharma</h3>
+                                <span>Chairman</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Arpana.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Harsh Vardhan.jpg" alt="">
-                                    </div>
-                                    <h3>Mr. Harsh Vardhan</h3>
-                                    <span>Designation</span>
+                                <h3>Mrs. Arpana Gaur</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Dharmendra.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Kanchan.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mrs. Kanchan</h3>
-                                    <span>Designation</span>
+                                <h3>Shri. Dharmendra Rathore</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Kanchan.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Pranam.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mr. Pranam</h3>
-                                    <span>Designation</span>
+                                <h3>Ms. Kanchan Chander</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Pranam.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Ravendra.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mr. Ravendra</h3>
-                                    <span>Designation</span>
+                                <h3>Shri S Pranam Singh</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Ravendra.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Sunil.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mr. Sunil</h3>
-                                    <span>Designation</span>
+                                <h3>Shri Ravendra Bhardwaj</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Sunil.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Vijayant.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mrs. Vijayant</h3>
-                                    <span>Designation</span>
+                                <h3>Shri Sunil Kumar Vishwakarma</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Vijayant.png" alt="Img">
                                 </div>
-                                <div class="slide">
-                                    <div>
-                                        <img src="../image/adv-Viren.jpg" alt="Img">
-                                    </div>
-                                    <h3>Mrs. Viren</h3>
-                                    <span>Designation</span>
+                                <h3>Shri Vijayant Dash</h3>
+                                <span>Member</span>
+                            </div>
+                            <div class="slide carousel-cell">
+                                <div>
+                                    <img src="../image/adv/adv-Viren.png" alt="Img">
                                 </div>
-                            </div> -->
+                                <h3>Shri Viren Tanwar</h3>
+                                <span>Member</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
         </div>
@@ -753,6 +768,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
+        const menuIcon = document.querySelector('.menu__item--hamburger');
+        const navLinks = document.querySelector('.nav_links');
+        let clicked = false;
+        if (window.innerWidth > 750) { navLinks.style.display = "flex"; }
+        if (window.innerWidth < 750) {
+            menuIcon.addEventListener('click', function () {
+                if (!clicked) {
+                    navLinks.style.display = "block";
+                    clicked = true;
+                }
+                else {
+                    clicked = false;
+                    navLinks.style.display = "none";
+                }
+            });
+        }
         window.addEventListener("load", function () {
             // store tabs variable
             var myTabs = document.querySelectorAll("ul.nav-tabs > li");
