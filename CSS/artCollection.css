@@ -59,28 +59,6 @@ body {
   z-index: -100;
 }
 
-.collection .art_collection .art.neptune .trajectory.ner,
-.collection .art_collection .art.neptune .trajectory.pro,
-.collection .art_collection .art.neptune .trajectory.tri,
-.collection .art_collection .art.uranus .trajectory.umb,
-.collection .art_collection .art.uranus .trajectory.ari,
-.collection .art_collection .art.uranus .trajectory.mir,
-.collection .art_collection .art.saturn .trajectory.enc,
-.collection .art_collection .art.saturn .trajectory.di,
-.collection .art_collection .art.saturn .trajectory.ti,
-.collection .art_collection .art.Art5 .trajectory.ga,
-.collection .art_collection .art.Art5 .trajectory.eu,
-.collection .art_collection .art.Art5 .trajectory.lop,
-.collection .art_collection .art.Art4 .trajectory.p,
-.collection .art_collection .art.Art4 .trajectory.d,
-.collection .art_collection .art.Art3 .trajectory.m {
-  border: 2px dashed white;
-  position: absolute;
-  border-radius: 3400px;
-  background: none !important;
-  z-index: -2;
-}
-
 .collection .art_collection .art {
   height: 100vh;
   width: 100vw;
@@ -4441,6 +4419,9 @@ body {
     margin-top: 4rem;
     font-size: 2.3rem;
   }
+  .skip_to_content {
+    display: none;
+  }
   .art .Art1 > p {
     width: 80% !important;
   }
@@ -4456,19 +4437,22 @@ body {
   .art .Art5 > p {
     width: 90% !important;
   }
+  .collection label.menu {
+    bottom: 20%;
+  }
 }
 @media (max-width: 350px) {
   .collection label.menu:nth-of-type(5) {
-    left: calc(50vw + ((135px + 100px) * 1) + 0px - 400px);
+    left: calc(50vw + ((135px + 100px) * 1) + 0px - 350px);
   }
   .collection label.menu:nth-of-type(4) {
-    left: calc(50vw + ((52px + 100px) * 2) + 0px - 400px);
+    left: calc(50vw + ((52px + 100px) * 2) + 0px - 360px);
   }
   .collection label.menu:nth-of-type(3) {
-    left: calc(50vw + ((24px + 100px) * 3) + 0px - 400px);
+    left: calc(50vw + ((24px + 100px) * 3) + 0px - 379px);
   }
   .collection label.menu:nth-of-type(2) {
-    left: calc(50vw + ((9px + 100px) * 4) + 0px - 400px);
+    left: calc(50vw + ((9px + 100px) * 4) + 0px - 389px);
   }
   .collection label.menu:nth-of-type(1) {
     left: calc(50vw + ((1px + 100px) * 5) + 0px - 400px);
